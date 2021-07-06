@@ -28,6 +28,8 @@ else
 fi
 FILE_PATH="$9"
 
+CONFIG_FILE_CONTENT="$10"
+
 if [ -f "$CONFIG_FILE" ]; then
    echo -e "${BLUE}Using markdown-link-check configuration file: ${YELLOW}$CONFIG_FILE${NC}"
 else
@@ -108,6 +110,7 @@ check_errors () {
 add_options () {
 
    if [ -f "$CONFIG_FILE" ]; then
+      echo $CONFIG_FILE_CONTENT > $CONFIG_FILE 
       FIND_CALL+=('--config' "${CONFIG_FILE}")
    fi
 
