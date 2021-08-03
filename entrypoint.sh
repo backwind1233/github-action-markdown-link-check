@@ -116,7 +116,7 @@ add_options () {
       echo "CONFIG_FILE"
       echo $CONFIG_FILE
       echo "==================================="
-      echo $CONFIG_FILE_CONTENT >> $CONFIG_FILE 
+      # echo $CONFIG_FILE_CONTENT >> $CONFIG_FILE 
       echo "CONFIG_FILE"
       echo $CONFIG_FILE
       echo "==================================="
