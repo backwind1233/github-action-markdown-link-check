@@ -110,7 +110,7 @@ check_errors () {
 add_options () {
 
    if [ -f "$CONFIG_FILE" ]; then
-      echo $CONFIG_FILE_CONTENT > $CONFIG_FILE 
+     # echo $CONFIG_FILE_CONTENT > $CONFIG_FILE 
       FIND_CALL+=('--config' "${CONFIG_FILE}")
    fi
 
